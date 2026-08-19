@@ -2,11 +2,10 @@
 
 import { useState } from "react"
 import styles from '@/styles/mesa.module.scss'
+import { MesaProps } from "@/types/interfaces"
 
-import {MesaProps} from "@/types/interfaces"
-
-export default function Mesa({ numero }: MesaProps) {
-  const [ocupada, setOcupada] = useState(false)
+export default function Mesa({ numero, estado }: MesaProps) {
+  const [ocupada, setOcupada] = useState(estado)
 
   return (
     <div 

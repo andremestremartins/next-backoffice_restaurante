@@ -1,3 +1,4 @@
 export interface MesaProps {
-  numero: number
+  numero: number, 
+  estado?: boolean
 }
