@@ -1,0 +1,41 @@
+.mesa {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  user-select: none;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.livre {
+  background: #dcfce7;
+  border-color: #22c55e;
+  color: #166534;
+}
+
+.ocupada {
+  background: #fee2e2;
+  border-color: #ef4444;
+  color: #991b1b;
+}
+
+.numero {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.estado {
+  font-size: 0.75rem;
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
