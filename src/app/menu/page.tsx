@@ -1,9 +1,11 @@
 import  Prato  from "@/components/Prato";
-
 export default function Menu() {
   return (
     <>
-    <Prato nome= {"bananan"} preco = {5}/>
+    <div className="inputMenu">
+      <input type="text" />
+    </div>
+    <Prato nome= {"Bife da Vazia"} preco = {26} id={1}/>
     </>
   );
 }
