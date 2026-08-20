@@ -9,9 +9,12 @@ import {
   User, 
   Plus 
 } from 'lucide-react'
-import styles from '@/styles/header.module.scss'
+import styles from '@/styles/modules/header.module.scss'
+import { useRouter } from 'next/navigation'
 
 export function Header() {
+
+  const router = useRouter()
   return (
     <header className={styles.header}>
       
@@ -20,19 +23,19 @@ export function Header() {
         <LayoutDashboard 
           size={22}  
           className={styles.icon}   
-          onClick={() => window.location.href = "/"}
+          onClick={() => router.push("/")}
         />
 
         <Utensils 
           size={22} 
           className={styles.icon}
-          onClick={() => window.location.href = "/menu"}
+          onClick={() => router.push("/menu")}
         />
 
         <ClipboardList 
           size={22} 
           className={styles.icon}
-          onClick={() => window.location.href = "/pedidos"}
+          onClick={() => router.push("/pedidos")}
         />
       </div>
 

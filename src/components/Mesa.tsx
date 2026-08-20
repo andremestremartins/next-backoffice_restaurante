@@ -1,10 +1,10 @@
 'use client'
 
 import { useState } from "react"
-import styles from '@/styles/mesa.module.scss'
-import { MesaProps } from "@/types/interfaces"
+import styles from '@/styles/modules/mesa.module.scss'
+import { IMesa } from "@/types/interfaces"
 
-export default function Mesa({ numero, estado }: MesaProps) {
+export default function Mesa({ numero, estado }: IMesa) {
   const [ocupada, setOcupada] = useState(estado)
 
   return (
